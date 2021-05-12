@@ -45,7 +45,10 @@ html {
 }
 
 .prose pre {
-  @apply bg-gray-50 border border-gray-200 dark:border-gray-700 dark:bg-gray-900;
+  @apply bg-gray-50;
+  @apply border ;
+  @apply border-gray-200;
+  @apply dark:border-gray-700 dark:bg-gray-900;
 }
 
 .prose code {
@@ -67,7 +70,8 @@ html {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  @apply text-gray-700 dark:text-gray-300;
+  @apply text-gray-700;
+  @apply dark:text-gray-300;
 }
 
 .token.punctuation {

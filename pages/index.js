@@ -7,29 +7,11 @@ import Container from '../components/Container';
 import BlogPost from '../components/BlogPost';
 //import Subscribe from '../components/Subscribe';
 import ProjectCard from '../components/ProjectCard';
-//import VideoCard from '../components/VideoCard';
 
-//export async function getStaticProps() {
-  //const auth = await googleAuth.getClient();
-  //const youtube = google.youtube({
-    //auth,
-    //version: 'v3'
-  //});
 
-  //const response = await youtube.videos.list({
-    //id: 'Pd2tVxhFnO4,FytxaSVQROc,u_o09PD_qAs',
-    //part: 'snippet,statistics'
-  //});
 
-  //return {
-    //props: {
-      //videos: response.data.items
-    //},
-    //revalidate: 60 * 60 // 1 hour
-  //};
-//}
 
-export default function Home({ videos }) {
+export default function Home() {
   return (
     <Container>
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
