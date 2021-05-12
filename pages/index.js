@@ -1,65 +1,54 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link';
+//import { google } from 'googleapis';
 
-export default function Home() {
+//import googleAuth from '@/lib/google/auth';
+//import Timeline from '../components/Timeline';
+import Container from '../components/Container';
+import BlogPost from '../components/BlogPost';
+//import Subscribe from '../components/Subscribe';
+import ProjectCard from '../components/ProjectCard';
+//import VideoCard from '../components/VideoCard';
+
+//export async function getStaticProps() {
+  //const auth = await googleAuth.getClient();
+  //const youtube = google.youtube({
+    //auth,
+    //version: 'v3'
+  //});
+
+  //const response = await youtube.videos.list({
+    //id: 'Pd2tVxhFnO4,FytxaSVQROc,u_o09PD_qAs',
+    //part: 'snippet,statistics'
+  //});
+
+  //return {
+    //props: {
+      //videos: response.data.items
+    //},
+    //revalidate: 60 * 60 // 1 hour
+  //};
+//}
+
+export default function Home({ videos }) {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+    <Container>
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+        <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+          Chào, mình là Tân Huỳnh
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+        <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
+          Hiện đang là web developer, writer, and creator. Bạn đã tìm thấy trang web cá nhân của mình –&nbsp;Bạn có thể&nbsp;
+          <Link href="/guestbook">
+            <a>Liên hệ mình&nbsp;</a>
+          </Link>
+          nếu như có bất cứ câu hỏi nào.
+        </h2>
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
+          Most Popular
+        </h3>
+        
+       
+      </div>
+    </Container>
+  );
 }
