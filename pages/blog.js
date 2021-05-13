@@ -2,14 +2,22 @@ import { useState } from 'react';
 
 import Container from '@/components/Container';
 import BlogPost from '@/components/BlogPost';
-//import { getAllFilesFrontMatter } from '@/lib/mdx';
+import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 export default function Blog({ posts }) {
-  
+  const [searchValue, setSearchValue] = useState('');
+  const filteredBlogPosts = posts
+    .sort(
+      (a, b) =>
+        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+    )
+    .filter((frontMatter) =>
+      frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
+    );
 
   return (
     <Container
-      title="Blog – Tan huynh"
+      title="Blog – Lee Robinson"
       description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
@@ -18,7 +26,7 @@ export default function Blog({ posts }) {
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           {`I've been writing online since 2014, mostly about web development and tech careers.
-            In total, I've written articles on this site.
+            In total, I've written ${posts.length} articles on this site.
             Use the search below to filter by title.`}
         </p>
         <div className="relative w-full mb-4">
@@ -44,7 +52,7 @@ export default function Blog({ posts }) {
             />
           </svg>
         </div>
-        
+        {!searchValue && (
           <>
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
               Most Popular
@@ -57,7 +65,7 @@ export default function Blog({ posts }) {
             <BlogPost
               title="How Stripe Designs Beautiful Websites"
               summary="Examining the tips and tricks used to make Stripe's website design a notch above the rest."
-              slug="how-stripe-designs-beautiful-websites"
+              slug="test"
             />
             <BlogPost
               title="Creating a Monorepo with Lerna & Yarn Workspaces"
@@ -65,21 +73,25 @@ export default function Blog({ posts }) {
               slug="monorepo-lerna-yarn-workspaces"
             />
           </>
+        )}
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           All Posts
         </h3>
-        
+        {!filteredBlogPosts.length && 
           <p className="text-gray-600 dark:text-gray-400 mb-4">
             No posts found.
           </p>
-        
+        }
+        {filteredBlogPosts.map((frontMatter) => (
+          <BlogPost key={frontMatter.title} {...frontMatter} />
+        ))}
       </div>
     </Container>
   );
 }
 
-//export async function getStaticProps() {
-  //const posts = await getAllFilesFrontMatter('blog');
+export async function getStaticProps() {
+  const posts = await getAllFilesFrontMatter('blog');
 
-  //return { props: { posts } };
-//}
+  return { props: { posts } };
+}
