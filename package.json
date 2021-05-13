@@ -8,14 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next/mdx": "^10.2.0",
     "@tailwindcss/typography": "^0.4.0",
+    "comma-number": "^2.1.0",
+    "date-fns": "^2.21.3",
     "next": "10.x",
     "next-themes": "^0.0.14",
     "react": "17.x",
     "react-dom": "17.x",
-    "tailwindcss": "^2.1.2"
+    "swr": "^0.5.6"
   },
   "devDependencies": {
-    "prettier": "2.3.0"
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "prettier": "2.3.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2"
   }
 }
