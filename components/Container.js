@@ -18,7 +18,7 @@ export default function Container(props) {
   const meta = {
     title: 'Tan Huynh – Developer, writer, creator.',
     description: `Front-end developer.`,
-    image: 'https://leerob.io/static/images/banner.png',
+    image: 'https://tanhuynh.io/static/images/banner.png',
     type: 'website',
     ...customMeta
   };

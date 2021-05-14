@@ -58,28 +58,18 @@ export default function Blog({ posts }) {
               Nổi bật
             </h3>
             <BlogPost
-              title="Tất Cả Những Gì Mình Biết Về Style Guides, Design Systems, and Component Libraries"
-              summary="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
-              slug="test-blog"
-            />
-            <BlogPost
-              title="Cách Stripe Thiết Kế Website"
-              summary="Examining the tips and tricks used to make Stripe's website design a notch above the rest."
-              slug="test-blog"
-            />
-            <BlogPost
-              title="Creating a Monorepo with Lerna & Yarn Workspaces"
-              summary="In this guide, you will learn how to create a Monorepo to manage multiple packages with a shared build, test, and release process."
-              slug="test-blog"
+              title="Web Fonts Năm 2021"
+              summary="Tìm hiểu các phương pháp hay nhất cho các trang web hiệu suất cao sử dụng phông chữ web, được cập nhật cho năm 2021."
+              slug="web-fonts-nam-2021"
             />
           </>
         )}
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-          All Posts
+          Tất Cả Bài Viết
         </h3>
         {!filteredBlogPosts.length && 
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-            No posts found.
+            Không tìm được bài viết nào.
           </p>
         }
         {filteredBlogPosts.map((frontMatter) => (
