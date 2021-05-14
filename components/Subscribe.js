@@ -77,9 +77,6 @@ export default function Subscribe() {
       ) : (
         <p className="text-sm text-gray-800 dark:text-gray-200">
           {`${subscriberCount || '-'} subscribers – `}
-          <Link href="/newsletter">
-            <a>29 issues</a>
-          </Link>
         </p>
       )}
     </div>
