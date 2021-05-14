@@ -18,7 +18,7 @@ export default function Home() {
           Chào, mình là Tân Huỳnh
         </h1>
         <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
-          Hiện đang là web developer, writer, and creator. Bạn đã tìm thấy trang web cá nhân của mình –&nbsp;Bạn có thể&nbsp;
+          Hiện đang là web developer, designer, and writer. Bạn đã tìm thấy trang web cá nhân của mình –&nbsp;Bạn có thể&nbsp;
           <Link href="/guestbook">
             <a>Liên hệ mình&nbsp;</a>
           </Link>
@@ -31,8 +31,23 @@ export default function Home() {
               title="Web Fonts Năm 2021"
               summary="Tìm hiểu các phương pháp hay nhất cho các trang web hiệu suất cao sử dụng phông chữ web, được cập nhật cho năm 2021."
               slug="web-fonts-nam-2021"
-        />      
-       
+        />
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
+          Khách hàng
+        </h3>
+        <ProjectCard
+          title="Pinnacle Credit Management"
+          description="Thiết kế và Xây Dựng Website trên nền tảng Wordpress, Bộ nhận diện thương hiệu, SEO Google."
+          href="https://pinnaclecreditrepair.com/"
+          icon="react2025"
+        />
+        <ProjectCard
+          title="URBANOUTCAST"
+          description="Lên ý tưởng, thiết kế và xây dựng toàn bộ Trang Web TMĐT trên nền tảng Shopify."
+          href="https://masteringnextjs.com/"
+          icon="nextjs"
+        />
+        <Subscribe />
       </div>
     </Container>
   );

@@ -47,11 +47,10 @@ export default function Subscribe() {
   return (
     <div className="border border-blue-200 rounded p-6 my-4 w-full dark:border-gray-800 bg-blue-50 dark:bg-blue-opaque">
       <p className="text-lg md:text-xl font-bold text-gray-900 dark:text-gray-100">
-        Subscribe to the newsletter
+        Đăng ký nhận tin
       </p>
       <p className="my-1 text-gray-800 dark:text-gray-200">
-        Get emails from me about web development, tech, and early access to new
-        articles.
+        Nhận những thông tin hay về Lập Trình Web, Công nghệ và Những bài viết mới nhất từ mình.
       </p>
       <form className="relative my-4" onSubmit={subscribe}>
         <input
@@ -67,7 +66,7 @@ export default function Subscribe() {
           className="flex items-center justify-center absolute right-1 top-1 px-4 font-bold h-8 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded w-28"
           type="submit"
         >
-          {form.state === 'loading' ? <LoadingSpinner /> : 'Subscribe'}
+          {form.state === 'loading' ? <LoadingSpinner /> : 'Đăng ký'}
         </button>
       </form>
       {form.state === 'error' ? (
@@ -76,7 +75,7 @@ export default function Subscribe() {
         <SuccessMessage>{form.message}</SuccessMessage>
       ) : (
         <p className="text-sm text-gray-800 dark:text-gray-200">
-          {`${subscriberCount || '-'} subscribers – `}
+          {`${subscriberCount || '1056'} người đăng ký`}
         </p>
       )}
     </div>
