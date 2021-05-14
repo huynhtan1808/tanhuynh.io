@@ -22,7 +22,7 @@ export default function BlogLayout({ children, frontMatter }) {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2">
           <div className="flex items-center">
             <Image
-              alt="Lee Robinson"
+              alt="Tan Huynh"
               height={24}
               width={24}
               src="/avatar.jpg"
