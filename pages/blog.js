@@ -17,7 +17,7 @@ export default function Blog({ posts }) {
 
   return (
     <Container
-      title="Blog – Lee Robinson"
+      title="Blog – Tan Huynh"
       description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
@@ -31,10 +31,10 @@ export default function Blog({ posts }) {
         </p>
         <div className="relative w-full mb-4">
           <input
-            aria-label="Search articles"
+            aria-label="Tìm kiếm bài viết"
             type="text"
             onChange={(e) => setSearchValue(e.target.value)}
-            placeholder="Search articles"
+            placeholder="Tìm kiếm bài viết"
             className="px-4 py-2 border border-gray-300 dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
           />
           <svg
@@ -55,22 +55,22 @@ export default function Blog({ posts }) {
         {!searchValue && (
           <>
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-              Most Popular
+              Nổi bật
             </h3>
             <BlogPost
-              title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
+              title="Tất Cả Những Gì Mình Biết Về Style Guides, Design Systems, and Component Libraries"
               summary="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
-              slug="style-guides-component-libraries-design-systems"
+              slug="test-blog"
             />
             <BlogPost
-              title="How Stripe Designs Beautiful Websites"
+              title="Cách Stripe Thiết Kế Website"
               summary="Examining the tips and tricks used to make Stripe's website design a notch above the rest."
-              slug="test"
+              slug="test-blog"
             />
             <BlogPost
               title="Creating a Monorepo with Lerna & Yarn Workspaces"
               summary="In this guide, you will learn how to create a Monorepo to manage multiple packages with a shared build, test, and release process."
-              slug="monorepo-lerna-yarn-workspaces"
+              slug="test-blog"
             />
           </>
         )}
