@@ -35,7 +35,7 @@ export default function Home() {
         <BlogPost
               title="Tại Sao Bạn Nên Học Next.js?"
               summary="Hiểu được sự phát triển đằng sau Web Framework phổ biến nhất của JavaScript và tìm hiểu lý do tại sao Next.js có thể giúp bạn xây dựng các ứng dụng web nhanh hơn."
-              slug="web-fonts-nam-2021"
+              slug="hoc-nextjs"
         />
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           Khách hàng
