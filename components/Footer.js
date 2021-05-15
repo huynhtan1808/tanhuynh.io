@@ -54,7 +54,7 @@ export default function Footer() {
           </Link>
           <Link href="/tweets">
             <a className="text-gray-500 hover:text-gray-600 transition">
-              Tweets
+              Source
             </a>
           </Link>
         </div>
