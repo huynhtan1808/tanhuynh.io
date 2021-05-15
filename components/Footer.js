@@ -52,7 +52,7 @@ export default function Footer() {
               Snippets
             </a>
           </Link>
-          <Link href="/tweets">
+          <Link href="https://github.com/huynhtan1808/tanhuynh.io">
             <a className="text-gray-500 hover:text-gray-600 transition">
               Source
             </a>
