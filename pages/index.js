@@ -35,7 +35,7 @@ export default function Home() {
         <BlogPost
               title="Tại Sao Bạn Nên Học Next.js?"
               summary="Hiểu được sự phát triển đằng sau Web Framework phổ biến nhất của JavaScript và tìm hiểu lý do tại sao Next.js có thể giúp bạn xây dựng các ứng dụng web nhanh hơn."
-              slug="web-fonts-nam-2021"
+              slug="hoc-nextjs"
         />
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           Khách hàng
@@ -51,6 +51,12 @@ export default function Home() {
           description="Lên ý tưởng, thiết kế và xây dựng toàn bộ Trang Web TMĐT trên nền tảng Shopify."
           href="https://urbanoutcast.club/"
           icon="urbanoutcast"
+        />
+        <ProjectCard
+          title="WPVie"
+          description="Website chia sẻ kiến thức và các hướng dẫn cho người mới bắt đầu sử dụng Wordpress"
+          href="https://wpvie.com/"
+          icon="wpvie"
         />
         <Subscribe />
       </div>
