@@ -25,9 +25,9 @@ export default function Blog({ posts }) {
           Blog
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
-            In total, I've written ${posts.length} articles on this site.
-            Use the search below to filter by title.`}
+          {`Mình bắt đầu viết blog từ năm 2019, chủ yếu về web development.
+            Tính tới thời điểm này, Mình đã viết ${posts.length} bài viết trên trang này.
+            Sử dụng thanh tìm kiếm bên dưới để lọc nội dung bạn quan tâm.`}
         </p>
         <div className="relative w-full mb-4">
           <input
