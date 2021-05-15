@@ -52,6 +52,12 @@ export default function Home() {
           href="https://urbanoutcast.club/"
           icon="urbanoutcast"
         />
+        <ProjectCard
+          title="WPVie"
+          description="Website chia sẻ kiến thức và các hướng dẫn cho người mới bắt đầu sử dụng Wordpress"
+          href="https://wpvie.com/"
+          icon="wpvie"
+        />
         <Subscribe />
       </div>
     </Container>
