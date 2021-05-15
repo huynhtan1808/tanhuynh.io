@@ -40,7 +40,7 @@ export default function Subscribe() {
     inputEl.current.value = '';
     setForm({
       state: 'success',
-      message: `Hooray! You're now on the list.`
+      message: `Yes Sir!! Bạn đã 'lên thuyền'.`
     });
   };
 
@@ -75,7 +75,7 @@ export default function Subscribe() {
         <SuccessMessage>{form.message}</SuccessMessage>
       ) : (
         <p className="text-sm text-gray-800 dark:text-gray-200">
-          {`${subscriberCount || '1056'} người đăng ký`}
+          {`${subscriberCount || '-'} người đăng ký`}
         </p>
       )}
     </div>
