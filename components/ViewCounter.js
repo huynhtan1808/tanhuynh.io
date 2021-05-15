@@ -17,5 +17,5 @@ export default function ViewCounter({ slug }) {
     registerView();
   }, [slug]);
 
-  return `${views ? format(views) : '1808'} lượt xem`;
+  return `${views ? format(views) : '–––'} views`;
 }
