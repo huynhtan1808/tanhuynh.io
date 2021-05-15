@@ -27,7 +27,7 @@ export default async (req, res) => {
   
         if (text.includes('already subscribed')) {
           return res.status(400).json({
-            error: `Bạn đã lên thuyền rồi mà?`
+            error: `Bạn đã đăng ký rồi :D`
           });
         }
   
@@ -41,4 +41,3 @@ export default async (req, res) => {
       return res.status(500).json({ error: error.message || error.toString() });
     }
   };
-  

@@ -35,9 +35,9 @@ export default function Footer() {
           <Link href="/">
             <a className="text-gray-500 hover:text-gray-600 transition">Home</a>
           </Link>
-          <Link href="/about">
+          <Link href="/blog">
             <a className="text-gray-500 hover:text-gray-600 transition">
-              About
+              Blog
             </a>
           </Link>
           <Link href="/newsletter">
@@ -47,17 +47,21 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col space-y-4">
-          <ExternalLink href="">
+          <ExternalLink href="https://www.facebook.com/huynhtan1808/">
             Facebook
           </ExternalLink>
-          <ExternalLink href="https://github.com/huynhtan1808">GitHub</ExternalLink>
+          <ExternalLink href="https://github.com/huynhtan1808">
+            GitHub
+          </ExternalLink>
           <ExternalLink href="">
             YouTube
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
           <Link href="/uses">
-            <a className="text-gray-500 hover:text-gray-600 transition">Uses</a>
+            <a className="text-gray-500 hover:text-gray-600 transition">
+              Uses
+            </a>
           </Link>
           <Link href="/snippets">
             <a className="text-gray-500 hover:text-gray-600 transition">
