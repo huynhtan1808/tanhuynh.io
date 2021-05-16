@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+import ProsCard from '@/components/ProsCard';
+import ConsCard from '@/components/ConsCard';
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -19,7 +21,9 @@ const CustomLink = (props) => {
 
 const MDXComponents = {
   Image,
-  a: CustomLink
+  a: CustomLink,
+  ConsCard,
+  ProsCard
 };
 
 
