@@ -11,7 +11,7 @@ export default function BlogLayout({ children, frontMatter }) {
     <Container
       title={`${frontMatter.title} – Tan Huynh`}
       description={frontMatter.summary}
-      image=""
+      image={`https://tanhuynh.io${frontMatter.image}`}
       date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
     >
