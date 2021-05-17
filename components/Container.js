@@ -3,12 +3,19 @@ import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
+import useSound from 'use-sound';
 
 import Footer from '../components/Footer';
 
 export default function Container(props) {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
+  const soundUrl = '/static/sounds/on-off.mp3';
+  const [play] = useSound(soundUrl);
+
+  const handleClick = () => { setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
+    play();
+  };
 
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
@@ -53,7 +60,7 @@ export default function Container(props) {
           aria-label="Toggle Dark Mode"
           type="button"
           className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10"
-          onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+          onClick={handleClick}
         >
           {mounted && (
             <svg
