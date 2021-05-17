@@ -21,7 +21,7 @@ class MyDocument extends Document {
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
-            src={`src="https://www.googletagmanager.com/gtag/js?id=G-BTWXCVW1ES"`}
+            src={`https://www.googletagmanager.com/gtag/js?id=G-BTWXCVW1ES`}
           />
           <script
             dangerouslySetInnerHTML={{
