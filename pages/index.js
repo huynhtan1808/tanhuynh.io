@@ -1,65 +1,65 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link';
+//import { google } from 'googleapis';
+
+//import googleAuth from '@/lib/google/auth';
+//import Timeline from '../components/Timeline';
+import Container from '../components/Container';
+import BlogPost from '../components/BlogPost';
+import Subscribe from '../components/Subscribe';
+import ProjectCard from '../components/ProjectCard';
+
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+    <Container>
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+        <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+          Chào, mình là Tân Huỳnh
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+        <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
+          Hiện đang là web developer, designer, and writer. Bạn đã tìm thấy trang web cá nhân của mình –&nbsp;Bạn có thể&nbsp;
+          <Link href="mailto:tanhuynh1808@gmail.com">
+            <a>Liên hệ mình&nbsp;</a>
+          </Link>
+          nếu như có bất cứ câu hỏi nào.
+        </h2>
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
+          Nổi Bật
+        </h3>
+        <BlogPost
+              title="Web Fonts Năm 2021"
+              summary="Tìm hiểu các phương pháp hay nhất cho các trang web hiệu suất cao sử dụng phông chữ web, được cập nhật cho năm 2021."
+              slug="web-fonts-nam-2021"
+        />
+        <BlogPost
+              title="Tại Sao Bạn Nên Học Next.js?"
+              summary="Hiểu được sự phát triển đằng sau Web Framework phổ biến nhất của JavaScript và tìm hiểu lý do tại sao Next.js có thể giúp bạn xây dựng các ứng dụng web nhanh hơn."
+              slug="hoc-nextjs"
+        />
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
+          Khách hàng
+        </h3>
+        <ProjectCard
+          title="Pinnacle Credit Management"
+          description="Thiết kế và Xây Dựng Website trên nền tảng Wordpress, Bộ nhận diện thương hiệu, SEO Google."
+          href="https://pinnaclecreditrepair.com/"
+          icon="pinnacle"
+        />
+        <ProjectCard
+          title="URBANOUTCAST"
+          description="Lên ý tưởng, thiết kế và xây dựng toàn bộ Trang Web TMĐT trên nền tảng Shopify."
+          href="https://urbanoutcast.club/"
+          icon="urbanoutcast"
+        />
+        <ProjectCard
+          title="WPVie"
+          description="Website chia sẻ kiến thức và các hướng dẫn cho người mới bắt đầu sử dụng Wordpress"
+          href="https://wpvie.com/"
+          icon="wpvie"
+        />
+        <Subscribe />
+      </div>
+    </Container>
+  );
 }
