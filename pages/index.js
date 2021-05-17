@@ -15,10 +15,10 @@ export default function Home() {
     <Container>
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          Chào, mình là Tân Huỳnh
+        👋 Chào, mình là Tân Huỳnh
         </h1>
         <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
-          Hiện đang là web developer, designer, and writer. Bạn đã tìm thấy trang web cá nhân của mình –&nbsp;Bạn có thể&nbsp;
+          Hiện đang là 💻 web developer, 🎨  designer,✍🏻  writer. Bạn đã tìm thấy trang web cá nhân của mình –&nbsp;Bạn có thể&nbsp;
           <Link href="mailto:tanhuynh1808@gmail.com">
             <a>Liên hệ mình&nbsp;</a>
           </Link>
