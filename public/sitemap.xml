@@ -17,6 +17,10 @@
   </url>
 
   <url>
+    <loc>https://tanhuynh.io/my-gear</loc>
+  </url>
+
+  <url>
     <loc>https://tanhuynh.io/blog/[slug]</loc>
   </url>
 </urlset>

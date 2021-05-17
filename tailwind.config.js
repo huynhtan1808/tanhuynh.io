@@ -6,6 +6,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      textDecoration: ['active'],
       colors: {
         'blue-opaque': 'rgb(13 42 148 / 18%)'
       },

@@ -1,8 +1,5 @@
 import Link from 'next/link';
-//import { google } from 'googleapis';
 
-//import googleAuth from '@/lib/google/auth';
-//import Timeline from '../components/Timeline';
 import Container from '../components/Container';
 import BlogPost from '../components/BlogPost';
 import Subscribe from '../components/Subscribe';
@@ -18,11 +15,11 @@ export default function Home() {
         👋 Chào, mình là Tân Huỳnh
         </h1>
         <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
-          Hiện đang là 💻 web developer, 🎨  designer,✍🏻  writer. Bạn đã tìm thấy trang web cá nhân của mình –&nbsp;Bạn có thể&nbsp;
+          Hiện đang là 💻 web developer, 🎨  designer,✍🏻  writer. Bạn đã tìm thấy trang web cá nhân của mình – Bạn có thể&nbsp;
           <Link href="mailto:tanhuynh1808@gmail.com">
-            <a>Liên hệ mình&nbsp;</a>
+            <a>Liên hệ mình</a>
           </Link>
-          nếu như có bất cứ câu hỏi nào.
+          &nbsp;nếu như có bất cứ câu hỏi nào.
         </h2>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
           Nổi Bật
