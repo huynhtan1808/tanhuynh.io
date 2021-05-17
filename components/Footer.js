@@ -19,11 +19,11 @@ export default function Footer() {
       <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
       <div className="flex sm:flex-row mb-8 space-x-0 sm:space-x-2 w-full">
       <p className="text-gray-800 dark:text-gray-200 font-small text-sm">
-      This site built on 
+      This blog is a 
         <Link href="https://nextjs.org/">
             <a target="_blank" className="text-blue-500 hover:text-blue-600 transition"> Next.js </a>
         </Link>
-        and deloyed with
+      application and I deloy it on
         <Link href="https://vercel.com/">
             <a target="_blank" className="text-blue-500 hover:text-blue-600 transition"> Vercel</a>
         </Link>
@@ -53,7 +53,7 @@ export default function Footer() {
           <ExternalLink href="https://github.com/huynhtan1808">
             GitHub
           </ExternalLink>
-          <ExternalLink href="">
+          <ExternalLink href="https://www.youtube.com/channel/UCelv4SsrE62_WX_Os7_HWVA">
             YouTube
           </ExternalLink>
         </div>
