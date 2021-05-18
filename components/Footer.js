@@ -18,11 +18,11 @@ export default function Footer() {
       <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
       <div className="flex sm:flex-row mb-8 space-x-0 sm:space-x-2 w-full">
       <p className="text-gray-800 dark:text-gray-200 font-small text-sm">
-      This blog is a 
+      Blog này là một 
         <Link href="https://nextjs.org/">
             <a target="_blank" className="text-blue-500 hover:text-blue-600 transition"> Next.js </a>
         </Link>
-      application and I deloy it on
+      application và mình deploy nó ở
         <Link href="https://vercel.com/">
             <a target="_blank" className="text-blue-500 hover:text-blue-600 transition"> Vercel</a>
         </Link>
