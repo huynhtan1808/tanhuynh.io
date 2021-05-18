@@ -39,9 +39,9 @@ export default function Footer() {
               Blog
             </a>
           </Link>
-          <Link href="/newsletter">
+          <Link href="mailto:hi@tanhuynh.io">
             <a className="text-gray-500 hover:text-gray-600 transition">
-              Newsletter
+              Contact
             </a>
           </Link>
         </div>
