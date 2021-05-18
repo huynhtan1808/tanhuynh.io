@@ -15,7 +15,7 @@ export default function Home() {
         👋 Chào, mình là Tân Huỳnh
         </h1>
         <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
-          Hiện đang là 💻 web developer, 🎨  designer,✍🏻  writer. Bạn đã tìm thấy trang web cá nhân của mình – Bạn có thể&nbsp;
+          Hiện đang là 💻 web developer, 🎨  designer,✍🏻  writer. Bạn đã tìm thấy blog cá nhân của mình – Bạn có thể&nbsp;
           <Link href="mailto:hi@tanhuynh.io">
             <a>Liên hệ mình</a>
           </Link>
