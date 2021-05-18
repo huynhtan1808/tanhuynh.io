@@ -34,12 +34,12 @@ Trong bài đăng này, chúng ta sẽ xem qua:
 
 ## Core Web Vitals là gì và Chúng tác động đến SEO như thế nào?
 
-Core Web Vitals giúp bạn hiểu tác động của hiệu suất ứng dụng của bạn đối với người dùng cuối.
- Có ba thành phần chính của Core Web Vitals để tối ưu hóa chất lượng trải nghiệm trang của bạn:
+Core Web Vitals giúp bạn hiểu tác động của hiệu suất ứng dụng của bạn đối với người dùng cuối. 
+Có ba thành phần chính của Core Web Vitals để tối ưu hóa chất lượng trải nghiệm trang của bạn:
 
 ### Largest Contentful Paint 
 Chỉ số [Largest Contentful Paint (LCP)](https://web.dev/lcp/) xem xét tốc độ tải trang của bạn. LCP đo thời gian cần thiết để phần tử lớn nhất trên trang hiển thị trong khung nhìn. 
-Đây có thể là một khối văn bản lớn, video hoặc hình ảnh chiếm bất động sản chính trên trang. Đây không phải là [First Contentful Paint (FCP)](https://web.dev/fcp/), 
+Đây có thể là một khối văn bản lớn, video hoặc hình ảnh chiếm nội dung chính trên trang. Đây không phải là [First Contentful Paint (FCP)](https://web.dev/fcp/), 
 đo thời gian từ khi trang bắt đầu tải đến khi phần tử đầu tiên được hiển thị trên màn hình.:
 
 <Image
@@ -133,7 +133,7 @@ Các dịch vụ nhằm thêm kết xuất trước trên đầu các ứng dụ
 
 ### Tối ưu hóa Hình ảnh (Image Optimization)
 Có một số cách để tối ưu hóa hình ảnh của bạn để cải thiện Core Web Vitals và SEO.
-- Sử dụng các thuộc tính `height` và `width` trên thành phần Hình ảnh của bạn trong phần tử Next.js hoặc `<img>` trong HTML để ngăn thay đổi bố cục. Việc thêm các thuộc tính này vào đánh dấu của bạn sẽ cho trình duyệt biết lượng không gian cần phân bổ.
+- Sử dụng các thuộc tính `height` và `width` trên thành phần `Image` của bạn trong phần tử Next.js hoặc `<img>` trong HTML để ngăn thay đổi bố cục. Việc thêm các thuộc tính này vào đánh dấu của bạn sẽ cho trình duyệt biết lượng không gian cần phân bổ.
 - Lazy-load hình ảnh khi chúng vào chế độ xem.
 - Sử dụng các định dạng hình ảnh hiện đại (WebP, AVIF).
 - Cung cấp hình ảnh có kích thước chính xác bằng `srcset`.
