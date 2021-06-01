@@ -8,9 +8,12 @@ const prettier = require('prettier');
 
   // Ignore Next.js specific files (e.g., _app.js) and API routes.
   const pages = await globby([
-    'pages/**/*{.js,.mdx}',
+    'pages/*.js',
+    'data/**/*.mdx',
+    '!data/*.mdx',
     '!pages/_*.js',
-    '!pages/api'
+    '!pages/api',
+    '!pages/404.js',
   ]);
   const sitemap = `
         <?xml version="1.0" encoding="UTF-8"?>
@@ -19,6 +22,7 @@ const prettier = require('prettier');
               .map((page) => {
                 const path = page
                   .replace('pages', '')
+                  .replace('data', '')
                   .replace('.js', '')
                   .replace('.mdx', '');
                 const route = path === '/index' ? '' : path;
