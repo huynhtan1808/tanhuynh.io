@@ -62,6 +62,16 @@ export default function Blog({ posts }) {
               summary="Tìm hiểu các phương pháp hay nhất cho các trang web hiệu suất cao sử dụng phông chữ web, được cập nhật cho năm 2021."
               slug="web-fonts-nam-2021"
             />
+            <BlogPost
+              title="Tại Sao Bạn Nên Học Next.js?"
+              summary="Hiểu được sự phát triển đằng sau Web Framework phổ biến nhất của JavaScript và tìm hiểu lý do tại sao Next.js có thể giúp bạn xây dựng các ứng dụng web nhanh hơn."
+              slug="hoc-nextjs"
+            />
+            <BlogPost
+              title="Core Web Vitals sẽ ảnh hưởng như thế nào đến Xếp hạng tìm kiếm Google vào năm 2021"
+              summary="Bắt đầu từ tháng 6 này, Google sẽ thêm Core Web Vitals vào báo hiệu xếp hạng Trải nghiệm trang của mình. Năm ngoái, Google đã công bố rằng những thay đổi đang đến trong cách thuật toán của họ xếp hạng các trang vượt xa tốc độ tải trang, duyệt web an toàn, HTTPS và tính thân thiện với thiết bị di động của chúng.              "
+              slug="core-web-virals-anh-huong-google-rankings-2021"
+            />
           </>
         )}
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
