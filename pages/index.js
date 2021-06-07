@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
         <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
           Hiện đang là 💻 web developer, 🎨  designer,✍🏻  writer. Bạn đã tìm thấy blog cá nhân của mình – Bạn có thể&nbsp;
-          <Link href="mailto:hi@tanhuynh.io">
+          <Link href="/contact">
             <a>Liên hệ mình</a>
           </Link>
           &nbsp;nếu như có bất cứ câu hỏi nào.
