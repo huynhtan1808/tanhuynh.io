@@ -40,8 +40,14 @@ export default function Home() {
               slug="core-web-virals-anh-huong-google-rankings-2021"
         />
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-          Khách hàng
+          Dự án đã thực hiện
         </h3>
+        <ProjectCard
+          title="GET Express"
+          description="Thiết kế và Xây Dựng Website với công nghệ JAMStack bằng Next.js, Headless CMS Strapi."
+          href="https://getexpress.vn/"
+          icon="getexpress"
+        />
         <ProjectCard
           title="Pinnacle Credit Management"
           description="Thiết kế và Xây Dựng Website trên nền tảng Wordpress, Bộ nhận diện thương hiệu, SEO Google."
