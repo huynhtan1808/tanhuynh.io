@@ -12,7 +12,7 @@ export default function ProjectCard({ title, description, href, icon }) {
         {icon == 'getexpress' && (
           <div className="h-8 w-8 ml-2 mr-4">
             <span className="sr-only">GET Express</span>
-          <svg className="h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100" viewBox="0 0 129 129">
+          <svg className="h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100" viewBox="0 0 1300.04 493.15">
             <g id="Layer_1-2" data-name="Layer 1">
               <path class="cls-1" d="M1232.88 0h-986.3A246.9 246.9 0 009.25 313.83a251 251 0 0017.62 44.85 246.65 246.65 0 00219.71 134.47h219.57V179.32H246.58a67.26 67.26 0 000 134.51h89.71v44.85h-89.71a112.09 112.09 0 010-224.17H1300V0z"/>
               <path class="cls-1" d="M1013.86 313.83v179.32h151.9V179.32h-151.9v134.51zM672.61 313.83h56.17v-.09h230.2V179.32H520.06v313.83h439.38V358.68H672.61v-44.85z"/>
