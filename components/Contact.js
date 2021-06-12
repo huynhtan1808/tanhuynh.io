@@ -84,7 +84,7 @@ export default function Contact() {
           className="px-4 py-2 mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full border-gray-300 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100"
         />
         <button
-          className="flex items-center justify-center mt-3 px-4 font-bold h-8 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded w-28"
+          className="flex items-center justify-center mt-3 px-4 font-bold h-10 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded w-28"
           type="submit"
         >
           {form.state === 'loading' ? <LoadingSpinner /> : 'Gửi'}
