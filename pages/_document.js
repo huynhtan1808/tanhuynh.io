@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1763279739775162"></script>
           <link
             rel="preload"
             href="/fonts/inter-var-latin.woff2"
