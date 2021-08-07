@@ -43,12 +43,6 @@ export default function Home() {
           Dự án đã thực hiện
         </h3>
         <ProjectCard
-          title="Business Hi-Lite"
-          description="Thiết kế và Xây Dựng Website Tin Tức với công nghệ JAMStack bằng Next.js, Headless CMS Strapi."
-          href="https://businesshilite.com/"
-          icon="getexpress"
-        />
-        <ProjectCard
           title="GET Express"
           description="Thiết kế và Xây Dựng Website với công nghệ JAMStack bằng Next.js, Headless CMS Strapi."
           href="https://getexpress.vn/"
