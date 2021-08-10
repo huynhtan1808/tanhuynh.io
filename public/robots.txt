@@ -1,2 +1,5 @@
+User-agent: Googlebot
+Disallow: /_next/
+
 User-agent: *
 Sitemap: https://tanhuynh.io/sitemap.xml
