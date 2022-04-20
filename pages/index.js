@@ -15,7 +15,7 @@ export default function Home() {
         👋 Chào, mình là Tân Huỳnh
         </h1>
         <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
-          Hiện đang là web developer, designer, writer. Bạn đã tìm thấy blog cá nhân của mình – Bạn có thể&nbsp;
+          Hiện đang là web developer, designer, writer. Đồng thời là Founder của <Link href="https://onepixelmedia.com" target="_blank"><a>One Pixel Media</a></Link>. Bạn đã tìm thấy blog cá nhân của mình – Bạn có thể&nbsp;
           <Link href="/contact">
             <a>Liên hệ mình</a>
           </Link>
